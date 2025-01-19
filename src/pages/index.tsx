@@ -38,11 +38,11 @@ export default function Home(props: HomeProps) {
   return (
     <>
       <Head>
-        <title>Ultimate Dad Joke Generator</title>
-        <meta name="description" content="Simple dad joke generator that uses OpenAI internally" />
+        <title>{props.joke?.setup} | Ultimate Dad Joke Generator</title>
+        <meta name="description" content={`${props.joke?.punchline}`} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="Ultimate Dad Joke Generator" />
-        <meta property="og:description" content="Simple dad joke generator that uses OpenAI internally" />
+        <meta property="og:title" content={`${props.joke?.setup} | Ultimate Dad Joke Generator`} />
+        <meta property="og:description" content={`${props.joke?.punchline}`} />
         <meta property="og:type" content="website" />
       </Head>
       <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">

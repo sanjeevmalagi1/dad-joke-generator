@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ultimate Dad Joke Generator
+
+Welcome to the **Ultimate Dad Joke Generator**! This web app delivers an endless supply of dad jokes, perfect for lightening the mood or sharing a laugh with friends and family. Built with Next.js, Tailwind CSS, and powered by a humor API, this app ensures you never run out of witty punchlines.
+
+## Features
+
+- **Dynamic Joke Generation**: Fetch new dad jokes instantly.
+- **Copy to Clipboard**: Easily share your favorite jokes with friends.
+- **Responsive Design**: Optimized for devices of all sizes.
+- **API-Driven**: Jokes fetched dynamically from a humor API.
+
+## Tech Stack
+
+- **Framework**: [Next.js 15.1.5](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Dependencies**:
+  - React and React DOM for UI rendering.
+- **Development Tools**:
+  - TypeScript for type safety.
+  - ESLint for linting and code quality.
+- **Hosting**: Deployed on [Netlify](https://netlify.com).
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js >= 18
+- npm >= 9
+
+### Installation
+
+1. Clone the repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/sanjeevmalagi1/dad-jokes-generator.git
+cd dad-jokes-generator
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Create an `.env.local` file and configure the following environment variable:
+```bash
+API_BASE_URL=<your_api_base_url>
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Run the development server:
+```bash
+npm run dev
+```
 
-## Learn More
+5. Open http://localhost:3000 in your browser to see the app.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Deployment
+To deploy the app, build it using:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run build
+```
+Deploy the generated .next folder and static assets to your hosting provider.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# License
+This project is licensed under the MIT License. See the LICENSE file for details.
